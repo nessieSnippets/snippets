@@ -1,0 +1,26 @@
+{
+  "name": "js-skeleton",
+  "version": "0.0.1",
+  "description": "Skeleton for JS project",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "prettier --check src/ test/ **.md",
+    "lint:fix": "prettier --write src/ test/ **.md",
+    "test:unit": "jest --testPathPattern=test/unit/",
+    "test:component": "echo \"Add component test command here\"",
+    "server": "node src/server.js",
+    "server:dev": "nodemon src/server.js",
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "author": "nessieSnippets",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "28.0.0",
+    "nodemon": "^2.0.15",
+    "prettier": "2.6.2"
+  },
+  "dependencies": {
+    "express": "4.17.3"
+  }
+}
