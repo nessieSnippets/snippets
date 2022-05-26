@@ -6,6 +6,8 @@
   "scripts": {
     "lint": "prettier --check src/ test/ **.md",
     "lint:fix": "prettier --write src/ test/ **.md",
+    "check": "eslint src/**",
+    "check:fix": "eslint src/** --fix",
     "test:unit": "jest --testPathPattern=test/unit/",
     "test:component": "echo \"Add component test command here\"",
     "server": "node src/server.js",
@@ -16,6 +18,8 @@
   "author": "nessieSnippets",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "8.16.0",
+    "eslint-plugin-jest": "^26.2.2",
     "jest": "28.0.0",
     "nodemon": "^2.0.15",
     "prettier": "2.6.2"
